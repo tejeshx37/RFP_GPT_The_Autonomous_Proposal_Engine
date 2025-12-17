@@ -1,0 +1,12 @@
+streamlit
+crewai
+litellm
+langchain
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+pypdf
+pandas
+python-dotenv
+google-generativeai
+numpy

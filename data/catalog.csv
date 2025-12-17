@@ -1,0 +1,11 @@
+sku,name,description,temperature_resistance,viscosity,cost
+SKU-101,HeatShield Pro,"High-temperature resistant coating for industrial surfaces, withstands up to 200 degrees Celsius",200,95,50
+SKU-102,ViscoGuard,"High-viscosity automotive coating designed for fleet maintenance and protective coatings",150,92,40
+SKU-103,FlexiCoat,"Flexible construction coating suitable for diverse building materials and surfaces",180,88,45
+SKU-104,ProSeal,"Professional sealant for commercial infrastructure projects with extended durability",160,89,48
+SKU-105,EcoCoat,"Eco-friendly sustainable coating option for environmentally conscious projects",140,85,35
+SKU-106,IndustrialPro,"Heavy-duty industrial coating for manufacturing and factory applications",190,93,55
+SKU-107,QuickDry,"Fast-drying coating solution for rapid deployment and turnaround projects",130,80,30
+SKU-108,PremiumGloss,"Premium glossy finish coating for aesthetic and protective requirements",170,91,52
+SKU-109,MoistureSafe,"Moisture-resistant coating for humid and water-exposed environments",175,87,46
+SKU-110,TempControl,"Temperature-regulating coating for climate-sensitive applications",185,94,58

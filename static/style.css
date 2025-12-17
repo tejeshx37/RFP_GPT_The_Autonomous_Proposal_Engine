@@ -1,0 +1,149 @@
+/* Import Modern Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-dark: #0f172a;
+    --secondary-dark: #1e293b;
+    --accent-blue: #3b82f6;
+    --accent-purple: #a855f7;
+    --accent-pink: #ec4899;
+    --text-light: #f8fafc;
+    --text-gray: #cbd5e1;
+    --success-green: #10b981;
+    --glow-blue: rgba(59, 130, 246, 0.5);
+    --glow-purple: rgba(168, 85, 247, 0.5);
+}
+
+/* Force Visibility Reset */
+* {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Base Styles */
+.stApp {
+    background: #0f172a;
+    /* Fallback */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: var(--text-light);
+}
+
+/* Animated Background - SIMPLIFIED */
+.stApp::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Main Container - ALWAYS VISIBLE */
+.main .block-container {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 2.5rem;
+    position: relative;
+    z-index: 100 !important;
+    /* Force on top */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    opacity: 1 !important;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+h1 {
+    background: linear-gradient(135deg, #3b82f6, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    padding-bottom: 0.5rem;
+}
+
+/* File Uploader */
+[data-testid="stFileUploader"] {
+    background: rgba(59, 130, 246, 0.05);
+    border: 2px dashed var(--accent-blue);
+    border-radius: 16px;
+    padding: 2rem;
+    z-index: 101;
+    position: relative;
+}
+
+[data-testid="stFileUploader"] label {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    z-index: 101;
+}
+
+.stButton>button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Column Cards */
+[data-testid="column"] {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+/* Metrics */
+[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: #3b82f6 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #cbd5e1 !important;
+}
+
+/* Remove ALL Animation interfering with opacity */
+.element-container,
+.stMarkdown,
+.stText {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 5px;
+}
